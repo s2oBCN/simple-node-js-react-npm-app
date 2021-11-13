@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'zulhilmizainuddin/jenkins-agent-nodejs'
+            image 'node:lts-buster-slim'
             args '-p 3000:3000'
         }
     }
